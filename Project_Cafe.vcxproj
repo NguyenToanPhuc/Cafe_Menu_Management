@@ -128,6 +128,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\Bill.cpp" />
+    <ClCompile Include="src\Discount.cpp" />
+    <ClCompile Include="src\Employee.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Recipe.cpp" />
+    <ClCompile Include="src\Revenue.cpp" />
+    <ClCompile Include="src\Shift.cpp" />
+    <ClCompile Include="src\Storage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\Bill.hpp" />
+    <ClInclude Include="header\Discount.hpp" />
+    <ClInclude Include="header\Employee.hpp" />
+    <ClInclude Include="header\Library.h" />
+    <ClInclude Include="header\Menu.hpp" />
+    <ClInclude Include="header\Recipe.hpp" />
+    <ClInclude Include="header\Revenue.hpp" />
+    <ClInclude Include="header\Shift.hpp" />
+    <ClInclude Include="header\Storage.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
