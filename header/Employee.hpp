@@ -17,10 +17,12 @@ class Employee {
 };
 
 class List_Employee {
+	private:
+		int Soluong;
+		Employee employee[MAX];
 	public:
-	int Soluong;
-	Employee employee[MAX];
-	void Sort();
+		void Sort();
+
 };
 
 #endif EMPLOYEE_HPP

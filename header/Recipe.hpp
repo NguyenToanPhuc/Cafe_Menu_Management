@@ -3,27 +3,36 @@
 #define RECIPE_HPP
 #include "Library.h"
 class Ingredient {
-private:
-	string name;
-	int Amount;
-	bool Unit; //1 la g 0 la ml
-public:
-	Ingredient();
-	Ingredient(string name_, int Amount_, bool Unit_);
-	void Insert(string name_, int Amount_, bool Unit_);
+	private:
+		string key;
+		string name;
+		int Amount;
+		bool Unit; //1 la g 0 la ml
+	public:
+		Ingredient() {}s;
+		Ingredient(const string _key, const string _name, const int _Amount, const bool _Unit);
 };
-typedef Recipe* PTR_RECIPE;
+
 class RecipeNode {
-	Ingredient data;
-	Recipe* next;
+	private:
+		Ingredient data;
+		RecipeNode* next;
+	
+	public:
+		RecipeNode(const Ingredient _data);
 
-	RecipeNode();
-	PTR_RECIPE New_Node(Ingredient data_);
-	void Insert_Head(Ingredient data_, PTR_RECIPE first);
+		friend class Recipe;
 };
+
 class Recipe {
-private:
-	Recipe
-
+	private:
+		RecipeNode* head;
+	public:
+		Recipe();
+		bool Empty() const;
+		void AddFront(const Ingredient data);
+		void RemoveFront();
+		~Recipe();
 };
-#endif RECIPE_HPP
+
+#endif RECIPE_HPP;

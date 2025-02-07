@@ -8,6 +8,7 @@
 class HangTrongKho {
 	private:
 		Ingredient Data;
+		int ammount;
 		int height;
 		HangTrongKho* left, * right;
 	public:

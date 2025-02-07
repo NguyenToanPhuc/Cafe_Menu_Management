@@ -12,7 +12,7 @@ Recipe::Recipe() {
 
 Recipe::~Recipe() {
 	while (!Empty()) {
-		Remove();
+		RemoveFront();
 	}
 }
 
@@ -36,3 +36,11 @@ void Recipe::RemoveFront()
 	head = temp->next;
 	delete temp;
 }
+
+
+
+
+
+Ingredient::Ingredient(const string _key, const string _name, const int _Amount, const bool _Unit)
+	: key(_key), name(_name), Amount(_Amount), Unit(_Unit)
+{}
