@@ -9,7 +9,7 @@ class Ingredient {
 		int Amount;
 		bool Unit; //1 la g 0 la ml
 	public:
-		Ingredient() {}s;
+		Ingredient() {};
 		Ingredient(const string _key, const string _name, const int _Amount, const bool _Unit);
 };
 
